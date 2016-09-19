@@ -56,6 +56,8 @@ if __name__ == '__main__':
         OrderedDict([
             ('total_reads', len(stats['lengths'])),
             ('total_bp', sum(stats['lengths'])),
+            ('mean_length', "{0:.3f}".format(
+             sum(stats['lengths']) / float(len(stats['lengths'])))),
             ('read_lengths', len_counts),
             ('mean_quality', "{0:.3f}".format(
                 sum(stats['per_read']) / len(stats['per_read']) - 33
