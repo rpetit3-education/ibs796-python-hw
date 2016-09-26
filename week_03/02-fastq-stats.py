@@ -5,7 +5,7 @@ Produce summary statistics of a FASTQ.
 This script reads a FASTQ file from STDIN and outputs summary statistics
 of the sequencing. Assumes the FASTQ is in 4-line per entry format.
 
-Example Usage: zcat FASTQ.gz | ./02-fastq-stats.py
+Example Usage: ./02-fastq-stats.py FASTQ.gz --compressed
 """
 from collections import OrderedDict
 
